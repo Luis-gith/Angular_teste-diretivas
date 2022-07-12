@@ -1,46 +1,70 @@
-<h1> Diretivas em Angular</h1>
+<h1 class ='text-center'> Diretivas em Angular</h1>
 <!--Diretivas de Atributo-->
-  <div 
+  <div
+  class ='text-center' 
   [ngStyle]="{ background: count < 5 ? 'red' : 'green' }"
   [ngClass]=" { custom: count > 5 } "
   >
-     <h3>Contador: {{ count }}</h3>
+     <h3 class ='text-center'>Contador: {{ count }}</h3>
 
   </div>
 
   <!--Diretivas Estruturais-->
-<h2 *ngIf="count>7; else menor">Contador passou de 7</h2>
+<h2 *ngIf="count>7; else menor"  class = 'text-center' >Contador passou de 7</h2>
 
 <ng-template #menor>
-  <h2>Contador é menor que 7</h2>
+  <h2 class ='text-center'>Contador é menor que 7</h2>
 </ng-template>
 
-<ul [ngSwitch]="count" class = "list-group mx-auto col-3">
-  <li 
-     class = "list-group-item"
-     *ngSwitchCase="3"
-  >
-  Igual a 3
-  </li>
-  <li 
-     class = "list-group-item"
-     *ngSwitchCase="5"
-  >
-  Igual a 5
-  </li>
-  <li 
-     class = "list-group-item"
-     *ngSwitchCase="9"
-  >
-  Igual a 9
-  </li>
+    <ul [ngSwitch]="count" class = "list-group mx-auto col-3 text-center">
+     <li 
+        class = "list-group-item"
+        *ngSwitchCase="3"
+     >
+     Igual a 3
+     </li>
+     <li 
+        class = "list-group-item"
+        *ngSwitchCase="5"
+     >
+     Igual a 5
+     </li>
+     <li 
+        class = "list-group-item"
+        *ngSwitchCase="9"
+     >
+     Igual a 9
+     </li>
+   
+       <li 
+        class = "list-group-item"
+        *ngSwitchDefault
+     >
+     DEFAULT
+     </li>
 
-    <li 
-     class = "list-group-item"
-     *ngSwitchDefault
-  >
-  DEFAULT
-  </li>
+    </ul>
 
+
+  <ul class="list-group mx-auto my-3 col-3 text-center">
+
+    <li
+      class = "list-group-item"
+      *ngFor="let person of pessoas"
+    >
+      O nome da pessoa é {{ person.nome }} {{ person.sobrenome }}
+    </li>
   
   </ul>
+<div class = "col-4 mx-auto my-3">
+  <h3 class="text-center"> {{ name }}</h3>
+  <button class="d-flex justify-content-center btn btn-success col-7 mx-auto" (click)="clicked('Luis')">Clique aqui</button>
+</div>
+
+  <div class="col-4 mx-auto">
+    <input type="text" class="form-control"
+      placeholder="Digite aqui"
+      [(ngModel)] = 'text'
+      >
+    <h4>Saída: {{ text }} </h4>
+  </div>
