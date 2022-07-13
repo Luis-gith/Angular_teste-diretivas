@@ -1,0 +1,10 @@
+<ul class="list-group mx-auto my-3 col-4 text-center">
+
+    <li
+      class = "list-group-item"
+      *ngFor="let pList of  listOfPpl "
+    >
+      O nome da pessoa é {{ pList.firstName }} {{ pList.lastName }} e ela tem {{pList.age}} anos de idade.
+    </li>
+  
+  </ul>
