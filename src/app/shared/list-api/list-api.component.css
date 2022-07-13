@@ -1,0 +1,8 @@
+#cards-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 10px solid black;
+    align-items: center;
+    justify-content:space-between;
+}
