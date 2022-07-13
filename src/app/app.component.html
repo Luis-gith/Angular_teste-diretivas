@@ -46,14 +46,16 @@
 
     </ul>
 
+    <app-list-people></app-list-people>
 
-  <ul class="list-group mx-auto my-3 col-3 text-center">
+
+  <ul class="list-group mx-auto my-3 col-4 text-center">
 
     <li
       class = "list-group-item"
       *ngFor="let person of pessoas"
     >
-      O nome da pessoa é {{ person.nome }} {{ person.sobrenome }}
+      O nome da pessoa é {{ person.firstName }} {{ person.lastName }} e ela tem {{person.age}} anos de idade.
     </li>
   
   </ul>
@@ -71,3 +73,6 @@
   </div>
 
   </div>
+
+  <h2>POKÉMON GOTTA CATCH 'EM ALL</h2>
+    <app-list-api></app-list-api>
