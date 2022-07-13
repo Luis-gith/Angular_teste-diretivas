@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HighlighterDirective } from './shared/directives/highlighter.directive';
 import { PeopleService } from './shared/services/people.service';
-import { ListPeopleComponent } from './shared/components/list-people/list-people.component';
-import { ListApiComponent } from './components/list-api/list-api.component';
+import { ListPeopleComponent } from './list-people/list-people.component';
+import { ListApiComponent } from './shared/list-api/list-api.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ListApiComponent } from './components/list-api/list-api.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
   ],
   providers: [PeopleService],
   bootstrap: [AppComponent],
