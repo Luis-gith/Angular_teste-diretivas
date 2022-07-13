@@ -1,4 +1,8 @@
-# DiretivasTeste
+# DiretivasTeste(Unfinished and discontinued)
+
+Nota: não consegui pegar as imagens. Não sei se por falta de conhecimento/inexpriência ou porque não tem jeito mesmo.  Tentarei uma pokedex novamente, seguindo um tutorial do YT e ver no que dá.
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
 
