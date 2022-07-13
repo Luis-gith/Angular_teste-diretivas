@@ -7,7 +7,7 @@ import { ListApiService } from '../services/list-api.service';
   styleUrls: ['./list-api.component.css']
 })
 export class ListApiComponent implements OnInit {
-  pokemons = {};
+  pokemons:Array<any> = [];
 
   constructor(private lista : ListApiService) { }
 
@@ -22,5 +22,6 @@ export class ListApiComponent implements OnInit {
     console.log(this.pokemons);
   })
   }
+
 
 }
