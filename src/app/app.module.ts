@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HighlighterDirective } from './directives/highlighter.directive';
+import { HighlighterDirective } from './shared/directives/highlighter.directive';
 
 @NgModule({
   declarations: [
