@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 
 export class ListApiService {
-  apiURL = 'https://pokeapi.co/api/v2/pokemon?limit=151%27';
+  apiURL = 'https://pokeapi.co/api/v2/pokemon';
 
 
 
